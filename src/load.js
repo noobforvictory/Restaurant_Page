@@ -9,10 +9,15 @@ export function pre_load (){
     bottom_header.classList.add('bottom_header');
     const menu1 = document.createElement('div');
     menu1.textContent = 'Home';
+    menu1.classList.add('home');
+    menu1.classList.add('active');
+
     const menu2 = document.createElement('div');
     menu2.textContent = 'Menu';
+    menu2.classList.add('menu');
     const menu3 = document.createElement('div');
     menu3.textContent = 'Contact';
+    menu3.classList.add('contact');
     bottom_header.append(menu1,menu2,menu3);
     header.append(top_header, bottom_header);
     const main = document.createElement('div');

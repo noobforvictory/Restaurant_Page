@@ -41,21 +41,23 @@ body{
 .bottom_header>div::after{
     content: "";
     height: 3px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    width: 150%;
     
+    position: absolute;
+    left: -20px;
+    bottom: -5px;
+    
+}
+.active{
+    color: aqua;
+    font-weight: bold;
 }
 .bottom_header>div:hover::after{
 background-color: #ffffff;
 
 
 }
-.bottom_header>div:active{
-    color: aqua;
-    
-}
+
 .main_el>div{
     overflow: hidden;
     height: 50rem;
@@ -141,4 +143,9 @@ margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+ }
+ 
+ p{
+    margin-left: 10 px;
  }
